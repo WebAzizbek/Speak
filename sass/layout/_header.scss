@@ -37,7 +37,7 @@
         margin: 0 2rem;
     }
     @include responsive(phone) {
-        margin: 0 1.5rem;
+        margin: 0 1rem;
     }
 }
 .header-top__btn {
@@ -71,9 +71,6 @@
     }
 }
 
-.header-center__wrapper {
-
-}
 .header-center__link {
     color: $color-primary;
 }
@@ -148,6 +145,133 @@
         transform: translateY(0px);
     }
     
+}
+
+
+
+// HEADER BOTTOM
+.header-bottom {
+    padding: 0rem 0rem 14rem;
+        @include responsive(big-table) {
+            padding-bottom: 8.5rem;
+        }
+    .container {
+        display: flex;
+        align-items: center;
+        @include responsive(big-table) {
+            flex-direction: column ;
+        }
+    }
+}
+
+.header-bottom__img {
+    display: block;
+    margin-right: 3.5rem;
+    @include responsive(laptop) {
+        width: 100%;
+        max-width: 533px;
+        height: 297px;
+    }
+    @include responsive(big-table) {
+        height: auto;
+        margin-bottom: 5rem;
+    }
+    @include responsive(phone) {
+        margin-bottom: 3rem;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    
+}
+.header-bottom__wrapper {
+
+}
+.header-bottom__title {
+    width: 100%;
+    max-width: 454px;
+    font-weight: 700;
+    font-size: 3.2rem;
+    margin-bottom: 3rem;
+    @include responsive(laptop) {
+        width: 100%;
+        max-width: 381px;
+        margin-bottom: 2rem;
+    }
+    @include responsive(big-table) {
+        max-width: 100%;
+    }
+    @include responsive(phone) {
+        font-size: 2.4rem;
+        text-align: center;
+    }
+}
+.header-bottom__text-wrapper {
+    display: flex;
+    align-items: center;
+    margin-bottom: 3.2rem;
+    span {
+        width: 90px;
+        height: 90px;
+        display: inline-block;
+        background-color: $color-white;
+        box-shadow: 0px 15px 25px 0px rgba(0, 0, 0, 0.05);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border-radius: 12px;
+        margin-right: 2rem;
+        @include responsive(big-table) {
+            width: 80px;
+            height: 80px;
+        }
+        @include responsive(phone) {
+            width: 75px;
+            height: 75px;
+        }
+    }
+}
+.header-bottom__inner-wrapper {
+
+}
+.header-bottom__inner-wrapper-title {
+    font-weight: 600;
+    font-size: 2.4rem;
+    color: $color-primary;
+    margin-bottom: 0.5rem;
+    @include responsive(laptop) {
+        font-size: 2rem;
+        
+    }
+}
+.header-bottom__inner-wrapper-text {
+    width: 100%;
+    max-width: 305px;
+    @include responsive(laptop) {
+        font-size: 1.6rem;
+        
+    }
+}
+.header-bottom__apk-wrapper {
+    display: flex;
+    align-items: center;
+}
+.header-bottom__appstore {
+    margin-left: -2.8rem;
+    width: 100%;
+    height: auto;
+    display: block;
+    @include responsive(phone) {
+        max-width: 185px;
+    }
+}
+.header-bottom__play {
+    margin-left: -2.8rem;
+    width: 100%;
+    height: auto;
+    display: block;
+    @include responsive(phone) {
+        max-width: 185px;
+    }
 }
 
 
