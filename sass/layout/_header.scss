@@ -1,0 +1,59 @@
+.header-top {
+    padding: 2rem 0;
+    .container {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+}
+.header-top__wrapper {
+    display: flex;
+    align-items: center;
+    @include responsive(table) {
+        flex-direction: row-reverse;
+    }
+}
+.bars-btn {
+    display: none;
+    @include responsive(table) {
+        display: block;
+    }
+}
+.header-top__lang {
+    object-fit: contain;
+    object-position: center;
+    cursor: pointer;
+    margin-right: 2.1rem;
+    @include responsive(table) {
+        display: none;
+    }
+}
+.header-top__lang-two {
+    display: none;
+    cursor: pointer;
+    @include responsive(table) {
+        display: block;
+        margin: 0 2rem;
+    }
+    @include responsive(phone) {
+        margin: 0 1.5rem;
+    }
+}
+.header-top__btn {
+    @include responsive(table) {
+        display: none;
+    }
+}
+.header-top-two__btn {
+    display: none;
+    @include responsive(table) {
+        display: inline-block;
+        padding: 0.8rem 2.5rem;
+        font-weight: 600;
+        font-size: 1.2rem;
+    }
+}
+
+
+
+
