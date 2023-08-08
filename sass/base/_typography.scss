@@ -1,0 +1,56 @@
+html {
+    font-size: 62.5%;
+}
+body {
+    font-family: $site-font;
+    font-size: 1.8rem;
+    line-height: 1.2;
+    color: $color-text;
+}
+a {
+    text-decoration: none;
+    color: inherit;
+}
+h1 {
+    margin: 0;
+}
+
+.site-btn {
+    padding: 1.25rem 3rem;
+    color: $color-white;
+    background: linear-gradient(225deg, #00B9B6 0%, #00CDAC 100%);
+    box-shadow: 0px 15px 30px rgba(220, 232, 243, 0.25);
+    border-radius: 12px;
+    font-family: $site-font;
+    font-weight: 700;
+    font-size: 1.6rem;
+    line-height: 1.2;
+    display: inline-block;
+}
+.site-btn:hover {
+    opacity: 0.8;
+}
+.site-btn:active {
+    opacity: 0.6;
+}
+
+.site-logo {
+    display: block;
+    @include responsive(table) {
+        width: 91px;
+        height: 18px;
+    }
+
+}
+.site-logo-img {
+    display: block;
+    object-fit: contain;
+    object-position: center;
+}
+
+.site-logo:hover {
+    opacity: 0.8;
+}
+.site-logo:active {
+    opacity: 0.6;
+}

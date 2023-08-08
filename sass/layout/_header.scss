@@ -1,0 +1,279 @@
+//HEADER TOP
+.header-top {
+    padding: 2rem 0;
+    .container {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+}
+.header-top__wrapper {
+    display: flex;
+    align-items: center;
+    @include responsive(table) {
+        flex-direction: row-reverse;
+    }
+}
+.bars-btn {
+    display: none;
+    @include responsive(table) {
+        display: block;
+    }
+}
+.header-top__lang {
+    object-fit: contain;
+    object-position: center;
+    cursor: pointer;
+    margin-right: 2.1rem;
+    @include responsive(table) {
+        display: none;
+    }
+}
+.header-top__lang-two {
+    display: none;
+    cursor: pointer;
+    @include responsive(table) {
+        display: block;
+        margin: 0 2rem;
+    }
+    @include responsive(phone) {
+        margin: 0 1rem;
+    }
+}
+.header-top__btn {
+    @include responsive(table) {
+        display: none;
+    }
+}
+.header-top-two__btn {
+    display: none;
+    @include responsive(table) {
+        display: inline-block;
+        padding: 0.8rem 2.5rem;
+        font-weight: 600;
+        font-size: 1.2rem;
+    }
+}
+
+//HEADER CENTER
+.header-center {
+    padding: 3rem 0rem 8rem;
+    @include responsive(phone) {
+
+    }
+    .container {
+        display: flex;
+        justify-content: space-between;
+        @include responsive(phone) {
+            flex-direction: column;
+            text-align: center;
+        }
+    }
+}
+
+.header-center__link {
+    color: $color-primary;
+}
+.header-center__title {
+    font-weight: 700;
+    font-size: 4.8rem;
+    color: $color-title;
+    margin-bottom: 5rem;
+    @include responsive(table) {
+        font-size: 3.2rem;
+        margin-bottom: 5rem;
+        max-width: 387px;
+    }
+    @include responsive(phone) {
+        max-width: 100%;
+        margin-bottom: 3rem;
+        font-size: 2.8rem;
+    }
+}
+.header-center__btn {
+    @include responsive(phone) {
+        margin-bottom: 3rem;
+    }
+}
+.header-center__img {
+    animation: center-ani 6s ease infinite;
+    object-fit: contain;
+    object-position: center;
+    @include responsive(table) {
+        width: 100%;
+        max-width: 354px;
+        height: 225px;
+    }
+    @include responsive(phone) {
+        margin-right: auto;
+        margin-left: auto;
+    }
+    
+}
+@keyframes center-ani {
+    0% {
+        transform: translateY(0px);
+    }
+    10% {
+        transform: translateY(-10px);
+    }
+    20% {
+        transform: translateY(-20px);
+    }
+    40% {
+        transform: translateY(0px);
+    }
+    50% {
+        transform: translateY(5px);
+    }
+    50% {
+        transform: translateY(8px);
+    }
+    70% {
+        transform: translateY(0px);
+    }
+    70% {
+        transform: translateY(-5px);
+    }
+    80% {
+        transform: translateY(5px);
+    }
+    890% {
+        transform: translateY(0px);
+    }
+    100% {
+        transform: translateY(0px);
+    }
+    
+}
+
+
+
+// HEADER BOTTOM
+.header-bottom {
+    padding: 0rem 0rem 14rem;
+        @include responsive(big-table) {
+            padding-bottom: 8.5rem;
+        }
+    .container {
+        display: flex;
+        align-items: center;
+        @include responsive(big-table) {
+            flex-direction: column ;
+        }
+    }
+}
+
+.header-bottom__img {
+    display: block;
+    margin-right: 3.5rem;
+    @include responsive(laptop) {
+        width: 100%;
+        max-width: 533px;
+        height: 297px;
+    }
+    @include responsive(big-table) {
+        height: auto;
+        margin-bottom: 5rem;
+    }
+    @include responsive(phone) {
+        margin-bottom: 3rem;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    
+}
+.header-bottom__wrapper {
+
+}
+.header-bottom__title {
+    width: 100%;
+    max-width: 454px;
+    font-weight: 700;
+    font-size: 3.2rem;
+    margin-bottom: 3rem;
+    @include responsive(laptop) {
+        width: 100%;
+        max-width: 381px;
+        margin-bottom: 2rem;
+    }
+    @include responsive(big-table) {
+        max-width: 100%;
+    }
+    @include responsive(phone) {
+        font-size: 2.4rem;
+        text-align: center;
+    }
+}
+.header-bottom__text-wrapper {
+    display: flex;
+    align-items: center;
+    margin-bottom: 3.2rem;
+    span {
+        width: 90px;
+        height: 90px;
+        display: inline-block;
+        background-color: $color-white;
+        box-shadow: 0px 15px 25px 0px rgba(0, 0, 0, 0.05);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border-radius: 12px;
+        margin-right: 2rem;
+        @include responsive(big-table) {
+            width: 80px;
+            height: 80px;
+        }
+        @include responsive(phone) {
+            width: 75px;
+            height: 75px;
+        }
+    }
+}
+.header-bottom__inner-wrapper {
+
+}
+.header-bottom__inner-wrapper-title {
+    font-weight: 600;
+    font-size: 2.4rem;
+    color: $color-primary;
+    margin-bottom: 0.5rem;
+    @include responsive(laptop) {
+        font-size: 2rem;
+        
+    }
+}
+.header-bottom__inner-wrapper-text {
+    width: 100%;
+    max-width: 305px;
+    @include responsive(laptop) {
+        font-size: 1.6rem;
+        
+    }
+}
+.header-bottom__apk-wrapper {
+    display: flex;
+    align-items: center;
+}
+.header-bottom__appstore {
+    margin-left: -2.8rem;
+    width: 100%;
+    height: auto;
+    display: block;
+    @include responsive(phone) {
+        max-width: 185px;
+    }
+}
+.header-bottom__play {
+    margin-left: -2.8rem;
+    width: 100%;
+    height: auto;
+    display: block;
+    @include responsive(phone) {
+        max-width: 185px;
+    }
+}
+
+
+
+
